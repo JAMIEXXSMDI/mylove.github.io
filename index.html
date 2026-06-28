@@ -1,0 +1,164 @@
+<!DOCTYPE html>
+<html lang="ru">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Для Лики </title>
+    <link rel="stylesheet" href="style.css">
+    <link rel="preconnect" href="https://fonts.googleapis.com">
+    <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
+    <link href="https://fonts.googleapis.com/css2?family=Nunito:wght@400;600;700&family=Pacifico&display=swap" rel="stylesheet">
+    <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/6.4.0/css/all.min.css">
+    <link href="https://fonts.googleapis.com/css2?family=Playfair+Display:wght@400;700;800&display=swap" rel="stylesheet">
+</head>
+<body>
+    <div class="confetti-container"></div>
+    
+    <div class="container">
+        <header class="header">
+            <h1><span class="party-emoji"></span> Лика <span class="party-emoji"></span></h1>
+            <p class="subtitle">Ты — лучшее, что со мной случилось</p>
+        </header>
+
+        <main>
+            <section class="hero">
+                <div class="big-photo-container">
+                    <div class="big-circle-frame" id="photoFrame">
+                        <div class="photo-wrapper">
+                            <img src="photo2.jpg" 
+                                 alt="Лика" 
+                                 class="big-circle-photo active"
+                                 id="photo1">
+                            <img src="photo1.jpg" 
+                                 alt="Моя Лика" 
+                                 class="big-circle-photo"
+                                 id="photo2">
+                        </div>
+                        <div class="photo-frame-decoration"></div>
+                        <div class="photo-hint">
+                            <i class="fas fa-sync-alt"></i>
+                            <span>Нажми на фото</span>
+                        </div>
+                    </div>
+                    
+                    <div class="photo-titles">
+                        <h3 class="photo-title active" data-photo="photo1">Моя нежная</h3>
+                        <h3 class="photo-title" data-photo="photo2">Моя любимая</h3>
+                    </div>
+                </div>
+            </section>
+
+            <section class="motivation">
+                <div class="motivation-card">
+                    <div class="motivation-icon">
+                        <i class="fas fa-heart"></i>
+                    </div>
+                    <blockquote class="motivation-quote">
+                        <p>"Спасибо судьбе, что я встретил тебя."</p>
+                    </blockquote>
+                </div>
+            </section>
+            
+            <section class="interactive-gallery">
+                
+                <!-- Основной слайдер -->
+                <div class="slider-container">
+                    <div class="slider-track" id="sliderTrack">
+                        <!-- Слайд 1 -->
+                        <div class="slide active" data-index="0">
+                            <div class="slide-image">
+                                <img src="photo3.jpg" alt="Наша первая встреча">
+                            </div>
+                            <div class="slide-info">
+                                <h4>Я полюбил тебя в первый день нашей встречи</h4>
+                                <p>И буду любить всегда.</p>
+                            </div>
+                        </div>
+                        
+                        <!-- Слайд 2 -->
+                        <div class="slide" data-index="1">
+                            <div class="slide-image">
+                                <img src="photo7.jpg" alt="Твоя улыбка">
+                            </div>
+                            <div class="slide-info">
+                                <h4>Твоя улыбка</h4>
+                                <p>Она греет меня лучше любого солнца.</p>
+                            </div>
+                        </div>
+                        
+                        <!-- Слайд 3 -->
+                        <div class="slide" data-index="2">
+                            <div class="slide-image">
+                                <img src="photo4.jpg" alt="Наше первое свидание">
+                            </div>
+                            <div class="slide-info">
+                                <h4>Твои глаза</h4>
+                                <p>В них больше звёзд, чем во всем космосе.</p>
+                            </div>
+                        </div>
+                        
+                        <!-- Слайд 4 -->
+                        <div class="slide" data-index="3">
+                            <div class="slide-image">
+                                <img src="photo5.jpg" alt="Ты и я">
+                            </div>
+                            <div class="slide-info">
+                                <h4>Ты — доказательство того, что чудеса существуют</h4>
+                            </div>
+                        </div>
+                    </div>
+                    
+                    <!-- Навигационные кнопки -->
+                    <div class="slider-controls">
+                        <button class="slider-btn prev-btn" id="prevBtn">
+                            <i class="fas fa-chevron-left"></i>
+                            <span>Назад</span>
+                        </button>
+                        
+                        <div class="slider-dots" id="sliderDots">
+                            <button class="dot active" data-index="0"></button>
+                            <button class="dot" data-index="1"></button>
+                            <button class="dot" data-index="2"></button>
+                            <button class="dot" data-index="3"></button>
+                        </div>
+                        
+                        <button class="slider-btn next-btn" id="nextBtn">
+                            <span>Вперёд</span>
+                            <i class="fas fa-chevron-right"></i>
+                        </button>
+                    </div>
+                </div>
+            </section>
+
+            <!-- БЛОК ВОСПОМИНАНИЙ -->
+            <section class="big-text-block">
+                <div class="memory-badge">
+                    <i class="fas fa-moon"></i>
+                    <h3>Мысли о тебе не дают мне заснуть</h3>
+                </div>
+                
+                <div class="big-text-content">
+                    <div class="memory-text-large">
+                        <p>Я смотрю на тебя и думаю: как в одном человеке может поместиться столько прекрасного? Твоя улыбка, твой голос, твой смех — всё это делает тебя той, кем ты являешься. Ты прекрасна в своей заботе. Прекрасна в своём умении делать мир вокруг лучше. Прекрасна в своей честности. Ты — редкое сочетание красоты внешней и внутренней. И я до сих пор удивляюсь, что ты у меня есть.</p>
+
+                        <p>Мы только узнаём друг друга. Но я уже сейчас знаю, что хочу быть рядом с тобой. Хочу смотреть, как ты растёшь, и расти вместе с тобой.</p>
+
+                        <p>Когда будет трудно — а так бывает у всех — знай, что я рядом. Можешь писать в любое время. Я буду применять все свои усилия, чтобы помочь тебе.</p>
+
+                    </div>
+                </div>
+            </section>
+        </main>
+
+        <footer class="footer">
+            <p class="signature">С любовью, твоя ТВАРЬ</p>
+        </footer>
+    </div>
+
+    <audio id="confettiSound" preload="auto">
+        <source src="https://assets.mixkit.co/sfx/preview/mixkit-achievement-bell-600.mp3" type="audio/mpeg">
+    </audio>
+
+    <script src="script.js"></script>
+</body>
+</html>
